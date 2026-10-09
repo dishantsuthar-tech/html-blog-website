@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Awesome Blog</h1>
+      <nav>
+        <a href="index.html">Home</a> |
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <h1>Contact Us</h1>
+      <form action="" method="get">
+        <div>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required />
+        </div>
+        <br />
+        <div>
+          <label for="phone">Phone No:</label><br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            maxlength="10"
+            minlength="10"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="msg">Message:</label> <br />
+          <textarea name="msg" id="msg" rows="4" cols="23" required></textarea>
+        </div>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
